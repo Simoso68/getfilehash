@@ -1,0 +1,13 @@
+{
+    "[makefile]": {
+        "editor.insertSpaces": false
+    },
+    "[python]": {
+        "diffEditor.ignoreTrimWhitespace": false,
+        "gitlens.codeLens.symbolScopes": [
+            "!Module"
+        ],
+        "editor.formatOnType": true,
+        "editor.wordBasedSuggestions": false
+    }
+}

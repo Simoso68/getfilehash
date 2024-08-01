@@ -5,5 +5,5 @@ def readfile(file):
         print("error: file not found.")
         exit(1)
     except OSError as x:
-        print(f"error: operating system related error: {x})
+        print(f"error: operating system related error: {x}")
         exit(1)

@@ -2,7 +2,7 @@ from sys import argv, exit
 from read import readfile
 from hash import *
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 files = []
 
 try:

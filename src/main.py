@@ -2,7 +2,7 @@ from sys import argv, exit
 from read import readfile
 from hash import *
 
-VERSION = "1.0.1"
+VERSION = "1.0.2"
 files = []
 
 try:
@@ -23,12 +23,12 @@ for arg in argv[2:]:
         elif arg == "-h" or arg == "--help":
             print("""
 General usage:
-    <hash-algorithm> <files>
+    getfilehash <hash-algorithm> <files>
 Arguments:
     -v / --version              Output version of getfilehash
     -h / --help                 Help for getfilehash
 Example:
-    sha256 file1.o file2.o""".replace("\n", "", 1))
+    getfilehash sha256 app.py""".replace("\n", "", 1))
             exit(0)
         else:
             print(f"error: unknown argument: {arg}")
@@ -37,7 +37,11 @@ Example:
         files.append(arg)
 
 for file in files:
-    if hashtype == "sha1": print(getsha1(readfile(file)))
-    elif hashtype == "sha256": print(getsha256(readfile(file)))
-    elif hashtype == "sha512": print(getsha512(readfile(file)))
-    elif hashtype == "md5": print(getmd5(readfile(file)))
+    if hashtype == "sha1": 
+        print(getsha1(readfile(file)))
+    elif hashtype == "sha256": 
+        print(getsha256(readfile(file)))
+    elif hashtype == "sha512": 
+        print(getsha512(readfile(file)))
+    elif hashtype == "md5": 
+        print(getmd5(readfile(file)))

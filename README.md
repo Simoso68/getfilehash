@@ -39,7 +39,7 @@ getfilehash <hashing-algorithm> <files>
 ## Example
 
 ```
-getfilehash sha256 script.c output.o
+getfilehash sha256 app.py another_app.py some_script.sh my_stuff.zip
 ```
 
 ## License
